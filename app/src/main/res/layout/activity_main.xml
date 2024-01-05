@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="173dp"
+        android:layout_height="78dp"
+        android:text="Time: 15"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="173dp"
+        android:layout_height="78dp"
+        android:text="Score: 0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="409dp"
+        android:layout_height="454dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="204dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="109dp"
+            android:layout_height="118dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/jack" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="109dp"
+            android:layout_height="118dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/jack" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
