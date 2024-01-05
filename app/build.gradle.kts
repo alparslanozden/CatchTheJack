@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.aaozden.catchthejack"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.aaozden.catchthejack"
@@ -32,6 +32,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    buildFeatures{
+        viewBinding= true
     }
 }
 
