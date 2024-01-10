@@ -21,8 +21,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun hideImages(view: View){
-
-
+        for (image in imageArray) {
+            image.visibility = View.INVISIBLE
+        }
+        imageArray[6].visibility = View.VISIBLE
     }
 
 
